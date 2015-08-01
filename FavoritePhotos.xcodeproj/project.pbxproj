@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		BA71EADC1B6AD0A800BBD9BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA71EADB1B6AD0A800BBD9BA /* main.m */; };
 		BA71EADF1B6AD0A800BBD9BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA71EADE1B6AD0A800BBD9BA /* AppDelegate.m */; };
-		BA71EAE21B6AD0A800BBD9BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA71EAE11B6AD0A800BBD9BA /* ViewController.m */; };
+		BA71EAE21B6AD0A800BBD9BA /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA71EAE11B6AD0A800BBD9BA /* PhotoViewController.m */; };
 		BA71EAE51B6AD0A800BBD9BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA71EAE31B6AD0A800BBD9BA /* Main.storyboard */; };
 		BA71EAE71B6AD0A800BBD9BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA71EAE61B6AD0A800BBD9BA /* Images.xcassets */; };
 		BA71EAEA1B6AD0A800BBD9BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA71EAE81B6AD0A800BBD9BA /* LaunchScreen.xib */; };
 		BA71EAF61B6AD0A800BBD9BA /* FavoritePhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA71EAF51B6AD0A800BBD9BA /* FavoritePhotosTests.m */; };
+		BA71EB011B6AD8F100BBD9BA /* CustomPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA71EB001B6AD8F100BBD9BA /* CustomPhotoCollectionViewCell.m */; };
+		BA71EB041B6B01FF00BBD9BA /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA71EB031B6B01FF00BBD9BA /* CustomImageView.m */; };
+		BAD259441B6C29220079771C /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD259431B6C29220079771C /* FavoritesViewController.m */; };
+		BAD259471B6C48AC0079771C /* ImageCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD259461B6C48AC0079771C /* ImageCompare.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,22 @@
 		BA71EADB1B6AD0A800BBD9BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA71EADD1B6AD0A800BBD9BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA71EADE1B6AD0A800BBD9BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BA71EAE01B6AD0A800BBD9BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BA71EAE11B6AD0A800BBD9BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA71EAE01B6AD0A800BBD9BA /* PhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		BA71EAE11B6AD0A800BBD9BA /* PhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		BA71EAE41B6AD0A800BBD9BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA71EAE61B6AD0A800BBD9BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BA71EAE91B6AD0A800BBD9BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BA71EAEF1B6AD0A800BBD9BA /* FavoritePhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoritePhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA71EAF41B6AD0A800BBD9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA71EAF51B6AD0A800BBD9BA /* FavoritePhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritePhotosTests.m; sourceTree = "<group>"; };
+		BA71EAFF1B6AD8F100BBD9BA /* CustomPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		BA71EB001B6AD8F100BBD9BA /* CustomPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		BA71EB021B6B01FF00BBD9BA /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
+		BA71EB031B6B01FF00BBD9BA /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
+		BAD259421B6C29220079771C /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		BAD259431B6C29220079771C /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		BAD259451B6C48AB0079771C /* ImageCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCompare.h; sourceTree = "<group>"; };
+		BAD259461B6C48AC0079771C /* ImageCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCompare.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +95,16 @@
 			children = (
 				BA71EADD1B6AD0A800BBD9BA /* AppDelegate.h */,
 				BA71EADE1B6AD0A800BBD9BA /* AppDelegate.m */,
-				BA71EAE01B6AD0A800BBD9BA /* ViewController.h */,
-				BA71EAE11B6AD0A800BBD9BA /* ViewController.m */,
+				BA71EAE01B6AD0A800BBD9BA /* PhotoViewController.h */,
+				BA71EAE11B6AD0A800BBD9BA /* PhotoViewController.m */,
+				BAD259421B6C29220079771C /* FavoritesViewController.h */,
+				BAD259431B6C29220079771C /* FavoritesViewController.m */,
+				BA71EAFF1B6AD8F100BBD9BA /* CustomPhotoCollectionViewCell.h */,
+				BA71EB001B6AD8F100BBD9BA /* CustomPhotoCollectionViewCell.m */,
+				BA71EB021B6B01FF00BBD9BA /* CustomImageView.h */,
+				BA71EB031B6B01FF00BBD9BA /* CustomImageView.m */,
+				BAD259451B6C48AB0079771C /* ImageCompare.h */,
+				BAD259461B6C48AC0079771C /* ImageCompare.m */,
 				BA71EAE31B6AD0A800BBD9BA /* Main.storyboard */,
 				BA71EAE61B6AD0A800BBD9BA /* Images.xcassets */,
 				BA71EAE81B6AD0A800BBD9BA /* LaunchScreen.xib */,
@@ -219,8 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA71EAE21B6AD0A800BBD9BA /* ViewController.m in Sources */,
+				BA71EB041B6B01FF00BBD9BA /* CustomImageView.m in Sources */,
+				BA71EAE21B6AD0A800BBD9BA /* PhotoViewController.m in Sources */,
+				BAD259441B6C29220079771C /* FavoritesViewController.m in Sources */,
 				BA71EADF1B6AD0A800BBD9BA /* AppDelegate.m in Sources */,
+				BA71EB011B6AD8F100BBD9BA /* CustomPhotoCollectionViewCell.m in Sources */,
+				BAD259471B6C48AC0079771C /* ImageCompare.m in Sources */,
 				BA71EADC1B6AD0A800BBD9BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +306,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -416,6 +440,7 @@
 				BA71EAFB1B6AD0A800BBD9BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA71EAFC1B6AD0A800BBD9BA /* Build configuration list for PBXNativeTarget "FavoritePhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				BA71EAFE1B6AD0A800BBD9BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

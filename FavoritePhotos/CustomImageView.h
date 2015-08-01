@@ -10,4 +10,6 @@
 
 @interface CustomImageView : UIImageView
 
+@property BOOL isSelected;
+
 @end
