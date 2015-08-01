@@ -116,6 +116,7 @@ NSString *const keyInstagram = @"eaeae8c492594ae6bf61f3348a3292ab";
     }
 
     return cell;
+    
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
