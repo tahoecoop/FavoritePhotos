@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ewh-68-FAQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A215h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ewh-68-FAQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="v0k-Nk-vCN">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="v0k-Nk-vCN">
                                 <rect key="frame" x="0.0" y="108" width="600" height="443"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="WE8-QO-mvR">
                                     <size key="itemSize" width="400" height="379"/>
@@ -35,6 +36,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPD-8V-28b">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <animations/>
                                                     <state key="normal" title="Remove from Favorites">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -44,10 +46,13 @@
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Bt-36-CyK" customClass="CustomImageView">
                                                     <rect key="frame" x="0.0" y="0.0" width="602" height="379"/>
+                                                    <animations/>
                                                 </imageView>
                                             </subviews>
+                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="fPD-8V-28b" secondAttribute="centerX" id="2Qo-6h-4og"/>
                                             <constraint firstAttribute="centerX" secondItem="fPD-8V-28b" secondAttribute="centerX" id="4i6-Ju-iOi"/>
@@ -133,6 +138,7 @@
                             </collectionView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="a4d-EQ-wyh">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="qH2-1J-nLm"/>
@@ -140,12 +146,14 @@
                             </searchBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zlk-j1-GOw">
                                 <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <animations/>
                                 <segments>
                                     <segment title="Search by tag"/>
                                     <segment title="Search by user"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="zlk-j1-GOw" secondAttribute="centerX" id="33e-cZ-Fcx"/>
@@ -171,13 +179,13 @@
                                 <exclude reference="PLd-OM-Qbl"/>
                                 <exclude reference="aQE-NK-HfY"/>
                                 <exclude reference="rQN-KK-Hgr"/>
-                                <exclude reference="RwJ-57-aAj"/>
-                                <exclude reference="St8-E4-z8l"/>
-                                <exclude reference="jO4-vT-6gG"/>
                                 <exclude reference="33e-cZ-Fcx"/>
                                 <exclude reference="3RU-1r-BwW"/>
                                 <exclude reference="aed-sM-CNk"/>
                                 <exclude reference="fvG-Iv-u3n"/>
+                                <exclude reference="RwJ-57-aAj"/>
+                                <exclude reference="St8-E4-z8l"/>
+                                <exclude reference="jO4-vT-6gG"/>
                                 <exclude reference="U61-Ul-RLB"/>
                             </mask>
                         </variation>
@@ -190,15 +198,15 @@
                                 <include reference="PLd-OM-Qbl"/>
                                 <include reference="aQE-NK-HfY"/>
                                 <include reference="rQN-KK-Hgr"/>
+                                <include reference="33e-cZ-Fcx"/>
+                                <include reference="3RU-1r-BwW"/>
+                                <include reference="aed-sM-CNk"/>
+                                <include reference="fvG-Iv-u3n"/>
                                 <exclude reference="NDG-lX-CDR"/>
                                 <include reference="RwJ-57-aAj"/>
                                 <exclude reference="Sq3-13-6cb"/>
                                 <include reference="St8-E4-z8l"/>
                                 <include reference="jO4-vT-6gG"/>
-                                <include reference="33e-cZ-Fcx"/>
-                                <include reference="3RU-1r-BwW"/>
-                                <include reference="aed-sM-CNk"/>
-                                <include reference="fvG-Iv-u3n"/>
                                 <include reference="U61-Ul-RLB"/>
                             </mask>
                         </variation>
@@ -223,6 +231,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Sxg-3p-YQm">
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -246,8 +255,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="O3R-UO-Utd">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="O3R-UO-Utd">
                                 <rect key="frame" x="0.0" y="108" width="600" height="443"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="m6r-AO-3z7">
                                     <size key="itemSize" width="400" height="379"/>
@@ -264,6 +274,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfi-fB-HCQ">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <animations/>
                                                     <state key="normal" title="Remove from Favorites">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -273,10 +284,13 @@
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="txq-P2-VvL" customClass="CustomImageView">
                                                     <rect key="frame" x="0.0" y="0.0" width="602" height="379"/>
+                                                    <animations/>
                                                 </imageView>
                                             </subviews>
+                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstItem="rfi-fB-HCQ" firstAttribute="top" secondItem="txq-P2-VvL" secondAttribute="bottom" constant="1" id="2Ca-Fk-7sw">
                                                 <variation key="widthClass=compact" constant="2"/>
@@ -356,6 +370,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="O3R-UO-Utd" firstAttribute="bottom" secondItem="tQm-yS-dsW" secondAttribute="top" id="OOi-ec-GGM"/>
